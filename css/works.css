@@ -1,0 +1,498 @@
+
+																				/* GLOBAL WORKS */
+
+.text-item {grid-area: title;}
+.text-descr {grid-area: descr; margin-top: 40px; margin-bottom: 40px;}
+.text-descr2 {grid-area: descr2;}
+.grid-global {grid-row-gap: 15px; margin-left: -8px;}
+.img-line {grid-area: img-element;}
+.img-line-2 {grid-area: img-element-2;}
+.img-layout1 {grid-area: img01;}
+.img-layout2 {grid-area: img02;}
+.img-layout3 {grid-area: img03;}
+.img-layout4 {grid-area: img04;}
+.img-layout5 {grid-area: img05;}
+.img-layout6 {grid-area: img06;}
+.def01 {grid-area: def01;}
+.def02 {grid-area: def02;}
+.def03 {grid-area: def03;}
+.def04 {grid-area: def04;}
+.def05 {grid-area: def05;}
+.def06 {grid-area: def06;}
+.img-pres {grid-area: img-pres;}
+
+
+
+.project-details .phone {position: absolute; right: 15vw; top: 140px;}
+.project02-details .motion {position: absolute; right: 15vw; top: 180px;}
+.project03-details .carefood {position: absolute; right: 15vw; top: 235px;}
+.project04-details .climax-teaser {position: absolute; right: 15vw; top: 235px;}
+.project05-details .blog-video {position: absolute; right: 15vw; top: 215px; border-radius: 18px;}
+.project06-details .data-video {position: absolute; right: 15vw; top: 180px;}
+.project07-details .frus-video {position: absolute; right: 15vw; top: 180px;}
+
+.close {
+	position: fixed;
+	top: 15px;
+	left: 3vw;
+	background-image: url("../img/close.png");
+	background-size: contain;
+	height: 35px;
+	width: 35px;
+	margin: 20px auto 20px auto;
+	cursor: pointer;
+	opacity: 0.6;
+	-webkit-transition: all ease-in-out 0.3s;
+	-o-transition: all ease-in-out 0.3s;
+	transition: all ease-in-out 0.3s;}
+.link-close { grid-column: 2; grid-row: 1; }
+
+
+																							/* WORK 06 */
+
+.project-details {
+	display: grid;
+	grid-template-columns: auto 500px 500px auto;
+  grid-template-rows: 350px repeat(12,auto);
+  grid-area: content;
+	grid-template-areas:
+		". title . ."
+		". descr . ."
+		". search-meteo search-meteo ."
+		". logo-meteo logo-meteo ."
+		". descr2 descr2 ."
+		". wf-meteo wf-meteo ."
+		". icon-meteo icon-meteo ."
+		". descr3 descr3 ."
+		". img-pres img-pres ."
+		". img-element img-element ."
+		". icon2-meteo icon2-meteo ."
+		". img-element-2 img-element-2 .";
+	grid-row-gap: 40px;}
+
+.project-details .backgd-header {
+	grid-column: 1 / span 4; grid-row: 1 / span 1;
+	z-index: -1; background-color: #a1e0d1;}
+
+.logo-meteo {
+	display: flex;
+	background-color: #fff;
+	padding: 30px;
+	width: 15vw;
+	box-shadow: 3px 3px 9px #808080;
+	padding: 2vw 5vw 2vw 5vw;
+	margin: 3vw auto 3vw auto;
+}
+.fd-logo-meteo { background-color: #C3F1E6; grid-area: logo-meteo;}
+.wf-meteo {
+	display: flex;
+	background-color: #F5F5F5;
+	width: 100%;
+	padding: 4vw 0 4vw 0;
+	grid-area: wf-meteo;
+}
+.icon-meteo {
+	background-color: #64C0B7;
+	width: 80%;
+	padding: 3vw 10% 3vw 10%;
+	grid-area: icon-meteo;
+}
+.icon2-meteo { background-color: #a8e6d6; grid-area: icon2-meteo;
+}
+.icon2-meteo img{
+	display: flex;
+	background-color: #fff;
+	padding: 30px;
+	width: 50%;
+	box-shadow: 3px 3px 9px #808080;
+	padding: 2vw 5vw 2vw 5vw;
+	margin: 3vw auto 3vw auto;
+}
+
+.search-meteo {
+	width: 60%;
+	margin: 5vw auto 5vw auto;
+	grid-area: search-meteo;
+}
+.text-descr2, .text-descr3 { margin: 3vw 23%;}
+
+.img-line {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-areas: "def01 def02 def03" "img01 img02 img03";
+	grid-column-gap: 5vw;
+	grid-row-gap: 10px;
+	padding: 5vw;
+}
+
+.img-line-2 {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-areas:"def04 def05 def06" "img04 img05 img06";
+	grid-column-gap: 5vw;
+	grid-row-gap: 10px;
+	padding: 5vw;
+}
+
+.img-layout1,.img-layout2,.img-layout3,.img-layout4,.img-layout5,.img-layout6 {
+	display: grid;
+	grid-template-rows: auto auto auto;
+	box-shadow: 3px 3px 9px grey;
+	grid-template-areas: "before" "overflow" "after";}
+
+.bg-img {
+	background-color: #D8EFEA;
+	grid-column: 1 / span 4;
+	grid-row: 10 / span 1;}
+
+.bg-img-2 {
+	background-color: #f1efef;
+	grid-column: 2 / span 2;
+	grid-row: 12 / span 1;}
+
+.img-overflow {
+	grid-area: overflow;
+	display: block;
+	white-space: inherit;
+	height: 15vw;
+	overflow: auto;}
+
+.img-layout6 .img-overflow {
+	white-space: none;
+	overflow: unset;}
+
+.def01, .def02, .def03, .def04, .def05, .def06 {
+	font-family: 'Source Sans Pro';
+	opacity: 0.7;
+	color: #b3b1b1	;
+	letter-spacing: 0.8pt;
+	font-weight: 300;
+	font-size: 11pt;
+	line-height: 24pt;
+	text-align: center;}
+
+.img-element {
+	white-space: inherit;
+	width: 100%;
+	height: auto;}
+
+.img-before {
+	grid-area: before;
+	display: block;
+	width: 100%;
+	height: 0.7vw;
+	background: url("../img/01/header.png");
+	background-size: 100%;
+	background-position: center;}
+.img-after {
+	grid-area: after;
+	display: block;
+	width: 100%;
+	height: 1.5vw;
+	background: url("../img/01/footer.png");
+	background-size: 100%;
+	background-position: center;}
+
+.fond-tab {
+	grid-column: 2 / span 2;
+	grid-row: 9 / span 1;
+	justify-self:stretch;
+	height: 40vw;}
+.tableau {
+	grid-column: 2 / span 2;
+	grid-row: 9 / span 1;
+	justify-self:center;
+	align-self: center;
+	width: 54%;
+	box-shadow: 3px 3px 9px #808080;}
+
+.text-descr3 {grid-area: descr3;}
+
+																						/* WORK 02 */
+
+.project02-details{
+	display: grid;
+	grid-template-columns: auto 500px 500px auto;
+  grid-template-rows: 350px repeat(3,auto);
+  grid-area: content;
+	grid-template-areas:
+		". title . ."
+		". descr . ."
+		". img-motion img-motion ."
+		". video-link video-link .";
+	grid-row-gap: 40px;}
+
+.project02-details .backgd-header {
+	grid-column: 1 / span 4; grid-row: 1 / span 1;
+	z-index: -1;
+	background-color: #f4e0b1;}
+
+.video-link-motion {grid-area: video-link; margin-right: auto; margin-left: auto; margin-top: 4vw; margin-bottom: 4vw;}
+
+.img-motion {
+	display: grid;
+	grid-area: img-motion;
+	grid-template-columns: 33% 33% 33%;
+  grid-template-rows: repeat(3, 330px);
+	grid-template-areas: "img-m01 img-m02 img-m03" "img-m04 img-m05 img-m06" "img-m07 img-m08 img-m09";}
+.img-m01 {grid-area: img-m01; background-image: url("../img/02/pastel.png"); background-size: cover; background-position: center;}
+.img-m02 {grid-area: img-m02; background-image: url("../img/02/peyber.png"); background-size: cover; background-position: center;}
+.img-m03 {grid-area: img-m03; background-image: url("../img/02/psyche.png"); background-size: cover; background-position: center;}
+.img-m04 {grid-area: img-m04; background-image: url("../img/02/peinture.png"); background-size: cover; background-position: center;}
+.img-m05 {grid-area: img-m05; background-image: url("../img/02/aquarelle.png"); background-size: cover; background-position: center;}
+.img-m06 {grid-area: img-m06; background-image: url("../img/02/fille.png"); background-size: cover; background-position: center;}
+.img-m07 {grid-area: img-m07; background-image: url("../img/02/velo.png"); background-size: cover; background-position: center;}
+.img-m08 {grid-area: img-m08; background-image: url("../img/02/skate.png"); background-size: cover; background-position: center;}
+.img-m09 {grid-area: img-m09; background-image: url("../img/02/feutre.png"); background-size: cover; background-position: center;}
+
+.backgd-video {grid-column: 2 / span 2; grid-row: 4 / span 1; background-color: #f4e0b1;}
+
+																							/* WORK 03 */
+
+.project03-details{
+	display: grid;
+	grid-template-columns: auto 500px 500px auto;
+  grid-template-rows: 350px repeat(7,auto);
+  grid-area: content;
+	grid-template-areas:
+		". title . ."
+		". descr . ."
+		". c-logo c-logo ."
+		". c-iphone c-iphone ."
+		". c-photo1 c-photo1 ."
+		". wf-section1 wf-section1 ."
+		". c-icon c-icon ."
+		". wf-section2 wf-section2 ."
+		". c-maps c-maps ."
+		". wf-section3 wf-section3 ."
+		". video-carefood video-carefood .";
+	grid-row-gap: 40px;}
+
+.project03-details .backgd-header {
+	grid-column: 1 / span 4; grid-row: 1 / span 1;
+	z-index: -1;
+	background-color: #a6deca;}
+
+.wf-section {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-column-gap: 5vw;
+	padding: 5vw 9vw 5vw 9vw;
+	background-color: #EAEBED;
+}
+.wf-section img {width: 100%; box-shadow: 2px 2px 4px #ababab;}
+.n1 {grid-area: wf-section1;}
+.n2 {grid-area: wf-section2;}
+.n3 {grid-area: wf-section3;}
+.c-logo { grid-area: c-logo; width: 40vw; display: block; margin: 5vw auto;}
+.c-iphone {grid-area: c-iphone; width: 100%;}
+.c-photo1 {grid-area: c-photo1; width: 100%;}
+.c-icon {grid-area: c-icon; width: 30vw; display: block; margin: 5vw auto;}
+.bkgd-icon {grid-column: 2 / span 2; grid-row: 7 / span 1; background-color: #93d4c3;}
+.c-maps {grid-area: c-maps; width: 100%;}
+.video-carefood {grid-area: video-carefood; margin-right: auto; margin-left: auto; margin-top: 4vw; margin-bottom: 4vw;}
+.bkgd-c-video {grid-column: 2 / span 2; grid-row: 11 / span 1; background-color: #EAEBED;}
+
+																							/* WORK 04 */
+
+#work04 {padding-top: 100px;}
+.project04-details{
+display: grid;
+grid-template-columns: auto 500px 500px auto;
+grid-template-rows: 350px auto repeat(10,auto);
+grid-area: content;
+grid-template-areas:
+". title . ."
+". descr . ."
+". cl-hands cl-hands ."
+". cl-veggie cl-veggie ."
+". cl-cow cl-cow ."
+". cl-insitu cl-insitu ."
+". cl-descr1 cl-descr1 ."
+". cl-mapsV1 cl-mapsV1 ."
+". cl-elements cl-elements ."
+". cl-icones cl-icones ."
+". cl-maps cl-maps ."
+". cl-descr2 cl-descr2 ."
+". cl-lafemme cl-lafemme ."
+". cl-isaac cl-isaac ."
+". cl-details cl-details ."
+". cl-interdits cl-interdits ."
+". cl-tableau cl-tableau ."
+;
+grid-row-gap: 40px;}
+
+.cl-hands {grid-area: cl-hands; width: 80%; margin: 0 auto; padding: 5vw 10%;}
+.cl-veggie {grid-area: cl-veggie; width: 40vw; margin: 5vw auto 0 auto; display: block;}
+.cl-cow {grid-area: cl-cow; width: 40vw; margin: 0 auto 5vw auto; display: block;}
+.bkgd-veggie {grid-column: 2 / span 2; grid-row: 4 / span 2; background-color: #1B2E35;}
+.bkgd-insitu {grid-column: 2 / span 2; grid-row: 6 / span 1; background: #f3ead7; margin-bottom: 8vw;}
+.cl-insitu {grid-area: cl-insitu; width: 50vw; margin: auto; position: relative; margin-top: 5vw;}
+.text-descr-1 {grid-area: cl-descr1; margin: 3vw 23%;}
+.cl-lafemme {grid-area: cl-lafemme; width: 30vw; margin: 5vw auto; position: relative; }
+.bkgd-mapsv1 {grid-column: 2 / span 2; grid-row: 8 / span 1; background-color: #f3ead7; mix-blend-mode: multiply;}
+.cl-mapsV1 {grid-area: cl-mapsV1; width: 40vw; margin: auto;}
+.cl-elements {grid-area: cl-elements; width: 90%; padding: 0 5%; margin: auto; background-color: #f3ead7;}
+.cl-maps {grid-area: cl-maps; width: 100%;}
+.cl-icones {grid-area: cl-icones; width: 70%; padding:5vw 15%; margin: auto; background: #f3ead7;}
+.text-descr-2 {grid-area: cl-descr2; margin: 3vw 23%;}
+.bkgd-lafemme {grid-column: 2 / span 2; grid-row: 13 / span 1; background-color: #1B2E35; margin-top: 20%; height: 60%;}
+.bkgd-isaac {grid-column: 2 / span 2; grid-row: 14 / span 1; background-color: #1B2E35;}
+.cl-isaac {grid-area: cl-isaac; width: 60%; position: relative; margin:5vw auto;}
+.cl-interdits {grid-area: cl-interdits; width: 30vw; margin:5vw auto;}
+.bkgd-interdits {grid-column: 2 / span 2; grid-row: 16 / span 1; background-color: #1B2E35; }
+.cl-details {grid-area: cl-details; width: 60%; padding: 5vw 20%; margin:0 auto; background-color: #011c1f;}
+.cl-tableau {grid-area: cl-tableau; width: 70%; padding: 5vw 15%; background-color: #1B2E35;}
+
+.project04-details .backgd-header {
+grid-column: 1 / span 4; grid-row: 1 / span 1;
+z-index: -1;
+background-color: #1b3e4e;}
+
+
+
+																							/* WORK 05 */
+
+.project05-details{
+display: grid;
+grid-template-columns: auto 500px 500px auto;
+grid-template-rows: 350px repeat(3,auto);
+grid-area: content;
+grid-template-areas:
+". title . ."
+". descr . ."
+". persona persona ."
+". bl-menu bl-menu ."
+". blog-wf-2 blog-wf-2 ."
+". atom atom ."
+". wf-search wf-search ."
+". blog-wf-1 blog-wf-1 .";
+grid-row-gap: 10px;
+grid-column-gap: 10px;}
+
+.project05-details .backgd-header {
+grid-column: 1 / span 4; grid-row: 1 / span 1;
+z-index: -1;
+background-color: #fff7a4;}
+#work05 video {border-radius: 18px;}
+
+.persona {grid-area: persona; width: 100%;}
+.menu {grid-area: bl-menu; margin: 0 auto; padding: 10vw; background-color: #ebebeb; margin: 3vw 0;}
+.atom {grid-area: atom; width: 100%;}
+.wf-search {grid-area: wf-search; width: 70%; margin: 15% auto 0 auto; box-shadow: 1px 1px 9px #e4e2e2}
+.bkgd-search {grid-column: 2 / span 2; grid-row: 7 / span 1; height: 50%; background-color: #ebebeb; margin-top: 6vw;}
+.blog-wf-1, .blog-wf-2 {
+	position: relative;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 1vw;
+  padding: 5vw 2vw;
+  background-color: #EAEBED;}
+.blog-wf-1 {grid-area: blog-wf-1; margin: 10vw 0 3vw 0	;}
+.blog-wf-2 {grid-area: blog-wf-2; height: 35%; margin-bottom: 5vw;}
+.blog-wf-1 img {width: 100%; box-shadow: 1px 2px 4px #d8d8d8}
+.blog-wf-2 img {width: 100%; box-shadow: 1px 2px 4px #d8d8d8}
+.blog-wf #event {margin-top: 6vw;}
+
+																							/* WORK 03 */
+
+.project06-details{
+display: grid;
+grid-template-columns: auto 500px 500px auto;
+grid-template-rows: 350px auto repeat(6,auto);
+grid-area: content;
+grid-template-areas:
+". title . ."
+". descr . ."
+". dt-analyse dt-analyse ."
+". dt-portrait dt-portrait ."
+". dt-icones dt-icones ."
+". aff-section aff-section ."
+". dt-img1 dt-img1 ."
+". dt-img2 dt-img2 ."
+". dt-schema dt-schema ."
+". dt-story dt-story ."
+". dt-aff1-full dt-aff1-full ."
+". dt-aff2-full dt-aff2-full ."
+;
+grid-row-gap: 40px;}
+
+.project06-details .backgd-header {
+grid-column: 1 / span 4; grid-row: 1 / span 1;
+z-index: -1;
+background-color: #e26a48;}
+
+.dt-analyse {grid-area: dt-analyse; width: 100%; }
+.dt-portrait {grid-area: dt-portrait;}
+.bkgd-portrait {grid-column: 2 / span 2; grid-row: 4 / span 1; margin-bottom: 15%; background: #e26a48;}
+.dt-icones {grid-area: dt-icones; width: 100%; margin-top: 5vw;}
+.dt-aff-section {
+	grid-area: aff-section;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-column-gap: 5vw;
+	padding: 5vw 9vw 5vw 9vw;
+	background-color: #EAEBED;}
+.dt-aff-section img {width: 100%; box-shadow: 2px 2px 6px #d0d0d0;}
+.dt-img1 {grid-area: dt-img1; width: 100%;}
+.dt-img2 {grid-area: dt-img2; width: 100%;}
+.dt-schema {grid-area: dt-schema; width: 800px; display: block; margin: 100px;}
+.dt-aff1-full {grid-area: dt-aff1-full; width: 40vw;}
+.dt-aff2-full {grid-area: dt-aff2-full; width: 40vw;}
+.dt-story {grid-area: dt-story;}
+.bkgd-aff1 {grid-column: 2 / span 2; grid-row: 11 / span 1; background: #EAEBED;}
+.bkgd-aff2 {grid-column: 2 / span 2; grid-row: 12 / span 1; background: #EAEBED;}
+.bkgd-story {grid-column: 2 / span 2; grid-row: 10 / span 1; background: #e26a48;}
+.dt-story, .dt-portrait {width: 700px; display: block; margin: 5vw auto 5vw auto; box-shadow: 0px 0px 9px #3a2924;}
+.dt-aff1-full, .dt-aff2-full {width: 40vw; display: block; margin: 5vw auto 5vw auto; box-shadow: 0px 0px 20px #bbbbba;}
+
+																							/* WORK 07 */
+.project07-details{
+display: grid;
+grid-template-columns: auto 500px 500px auto;
+grid-template-rows: 350px repeat(3,auto);
+grid-area: content;
+grid-template-areas:
+". title . ."
+". descr . ."
+". fr-logo fr-logo ."
+". fr-vague fr-vague ."
+". fr-flyer1 fr-flyer1 ."
+". bloc-flyer bloc-flyer ."
+". bloc-goodies bloc-goodies ."
+". fr-surfer fr-surfer ."
+". bloc-affiche bloc-affiche ."
+". fr-all fr-all .";
+grid-column-gap: 0px;
+grid-row-gap: 40px;}
+
+.fr-logo {grid-area: fr-logo; width: 100%;}
+.fr-vague {grid-area: fr-vague; width: 100%;}
+.fr-flyer1 {grid-area: fr-flyer1; width: 100%;}
+.bloc-flyer {grid-area: bloc-flyer; display: grid; grid-template-areas: "fr-flyer2 fr-flyer3" "fr-flyer4 fr-flyer4";}
+.bloc-flyer img {width: 100%;}
+.fr-flyer2 {grid-area: fr-flyer2;}
+.fr-flyer3 {grid-area: fr-flyer3;}
+.fr-flyer4 {grid-area: fr-flyer4;}
+.bloc-goodies {grid-area: bloc-goodies; display: grid; grid-template-areas: "fr-bracelet fr-tees" "fr-wax fr-wax";}
+.bloc-goodies img {width: 100%;}
+.fr-bracelet {grid-area: fr-bracelet;}
+.fr-tees {grid-area: fr-tees;}
+.fr-wax {grid-area: fr-wax;}
+.fr-surfer {grid-area: fr-surfer; width: 100%;}
+.bloc-affiche {grid-area: bloc-affiche; display: grid; grid-template-areas: "fr-affiche fr-etiquette" "fr-affiche fr-aileron";}
+.fr-etiquette {grid-area: fr-etiquette; width: 100%;}
+.fr-affiche {grid-area: fr-affiche; width: 100%;}
+.fr-aileron {grid-area: fr-aileron; width: 100%;}
+.fr-all {grid-area: fr-all; width: 100%;}
+
+
+.project07-details .backgd-header {
+grid-column: 1 / span 4; grid-row: 1 / span 1;
+z-index: -1;
+background-color: #dad6c0;}
+#work07 video {margin-top: 30px;}
