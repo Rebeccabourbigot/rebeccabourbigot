@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="86px" viewBox="0 0 17 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48 (47235) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/pencil</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/pencil">
+            <rect id="Rectangle-4" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="1" y="5.42647375" width="15.7179633" height="55.8730015"></rect>
+            <rect id="Rectangle-5" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="2.27442945" y="61.2994752" width="13.1691044" height="6.65599842"></rect>
+            <rect id="Rectangle-6" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="4.29003316" y="68.0428108" width="9.13789696" height="7.07632752"></rect>
+            <rect id="Rectangle-7" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="2.27442945" y="1" width="13.1691044" height="4.42647375"></rect>
+            <path d="M12.5,9.52068863 L12.5,57.2052603" id="Path-4" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></path>
+            <path d="M6.67896581,75.1191383 L11.0389975,75.1191383 L11.0389975,79.5951209 C11.0389975,80.7991104 10.0629711,81.7751367 8.85898164,81.7751367 L8.85898164,81.7751367 C7.65499214,81.7751367 6.67896581,80.7991104 6.67896581,79.5951209 L6.67896581,75.1191383 Z" id="Rectangle-8" fill="#9B9B9B"></path>
+        </g>
+    </g>
+</svg>
