@@ -1,78 +1,15 @@
 @media all and (min-width: 950px) {
-	.grid-content {
-		grid-template-columns: repeat(2,1fr);
-		grid-template-rows: repeat(3,700px);
-		grid-column-gap: 7vw;
-		grid-row-gap: 100px;
-		margin: auto;
-	}
-	.backgd-items {max-width: 480px;}
-	.grid-global{grid-template-columns: 10vw 80vw 10vw;}
-	.right-shift{margin-top: 350px;}
-	#work03{margin-top: -60px;}
-
-	.grid-global h1{margin: 25px auto 10px auto;}
-	.grid-global h2{	margin: 5px auto 10px auto;}
-	.grid-global h1, .grid-global h2 {
-		max-width: 450px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+	.grid-global {
+		max-width: 1300px;
+		margin: auto;}
 }
 
-@media all and (min-width: 700px) and (max-width: 950px) {
-	.grid-global h1{margin: 25px 20vw 10px 20vw; text-align: center;}
-	.grid-global h2{	margin: 5px 20vw 10px 20vw;}
-}
-
-@media all and (max-width: 950px) {
-	.grid-content {
-		grid-template-columns: 1fr;
-		grid-row-gap: 0px;
-		grid-template-rows: repeat(6,750px);
-	}
-	.backgd-items {
-		max-width: none;
-		background-repeat: no-repeat;
-		background-position: center;
-    background-size: cover;
-	}
-	.grid-global{grid-template-columns: 0vw 100vw 0vw;}
-	.right-shift{margin-top: 0px;}
-
-	#work03{margin-top: 0px;}
-
-	.grid-global h1 {max-width: none;}
-	.grid-global h2 {max-width: none;}
-
-	.teaser {background-image: url("../img/fond-teaser.jpg");}
-	.psc {background-image: url("../img/fond-psc.jpg")}
-	.data {background-image: url("../img/fond-psc.jpg")}
-	.climax {background-image: url("../img/fond-psc.jpg")}
-	.blog {background-image: url("../img/fond-psc.jpg")}
-	.frus {background-image: url("../img/fond-frus.jpg")}
-	.weather {background-image: url("../img/fond-psc.jpg")}
-}
-
-@media all and (max-width: 700px){
-	.grid-global h1{margin: 25px 5vw 10px 5vw; text-align: center;}
-	.grid-global h2{	margin: 5px 5vw 10px 5vw;}
-}
 
 h1 {
 	font-size: 22pt;
 	font-family: 'audimat_3000_mi-grasregular';
 	color: #383838;
 }
-
-.grid-article h1 {
-	font-size: 35pt;
-	font-family: 'audimat_3000_mi-grasregular';
-	margin: 100px auto 0px auto;
-	color: #fff;
-	letter-spacing: 5px;
-}
-
 h2 {
 	font-size: 13pt;
 	letter-spacing: 1px;
@@ -82,7 +19,6 @@ h2 {
 	line-height: 21pt;
 	mix-blend-mode: multiply;
 }
-
 h3 {
 	font-size: 18pt;
 	color: #505050;
@@ -92,7 +28,6 @@ h3 {
 	font-weight: 500;
 	line-height: 1.6;
 }
-
 h4 {
 	font-size: 13pt;
 	color: #505050;
@@ -102,7 +37,6 @@ h4 {
 	font-weight: 300;
 	line-height: 1.6;
 }
-
 p {
 	font-family: 'Source Sans Pro';
 	letter-spacing: 0.15pt;
@@ -112,8 +46,6 @@ p {
 	-webkit-margin-before: 0px;
   -webkit-margin-after: 1em;
 }
-
-
 a {
 	text-decoration: none;
 	color: black;
@@ -124,128 +56,47 @@ header {
 	position: relative;
 	flex-direction: column;
 	align-items: center;
-	margin-right: auto;
-	margin-left: auto;
 	grid-area: header;
 }
 
+header img {
+	width: 20vw;
+	margin-bottom: 20vh;
+}
+
 .grid-content {
-	display: grid;
+	display: inline-grid;
 	grid-area: content;
 }
 
 .grid-global {
 	display: grid;
-	grid-row-gap: 50px;
 	grid-template-rows: auto;
-	grid-template-areas:	". header ."
-												". content .";
+	margin: 20vh auto;
+	grid-template-areas:	". header header ."
+												"content content content content";
 }
 
-.grid-global-mid {
-	display: grid;
-	grid-template-columns: 100vw;
-	grid-row-gap: 50px;
-	grid-template-rows: auto;
-	grid-template-areas:	". header ."
-												". content .";
+* { box-sizing: border-box; }
+
+.grid {
+  max-width: 1300px;
 }
 
-.grid-items {
-	height: 500px;
-	position: relative;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	cursor: pointer;
-	padding-top: 50px;
+.grid-item {
+	display: block;
+  width: 325px;
+  height: auto;
+	padding: 10px;
 }
 
-.backgd-items {
-	display: table;
-	margin-top: 200px;
-	margin-right: auto;
-	margin-left: auto;
-	width: 100%;
-	height: 300px;
-	bottom: 0px;
-	align-self: flex-start;
+.grid img {
+	width: 325px;
 }
 
-
-.weather {background-image: url("../img/fond-paper.png");}
-.psc{background-image: url("../img/fond-psc.jpg");}
-.teaser{
-	background-image: url("../img/fond-teaser.jpg");
-	margin-top: 100px;}
-.climax{
-	background-image: url("../img/climax1.jpg");
-	background-size: cover;
-	margin-top: 100px;}
-.blog{
-	background-image: url("../img/fond-ecv-blog.png");
-	background-position: center;
-	margin-top: 170px;}
-.frus{
-	background-image: url("../img/fond-frus.jpg");
-	background-position: center;
-	margin-top: 200px;}
-
-.data{background-image: url("../img/fond-club.jpg");}
-
-#blog {
-	margin-top: 15px;
-}
-
-#desk-screen {
-	position: absolute;
-}
-
-.phone {
-	border-radius: 28px;
-}
-
-video {
-	position: absolute;
-	box-shadow: 0px 3px 4px #3e3e3e6b;
-}
-
-.video-psc {
-	margin-top: 70px;
-}
-
-.logo {
-	width: 250px;
-	margin-top: 30px;
-}
-
-.text-item {
-	position: relative;
-	margin-bottom: 40px;
-}
-
-a:hover > h1 {
-	font-size: 40pt;
-}
-
-.link1 {
-	background-color: rgba(230,55,125,0.5);
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	display: flex;
-}
-
-.detail-01 {
-	display: none;
-	background-color: pink;
-	width: 100%;
-	height: 100%;
-}
-
-.detail-01 img {
-	width: 100px;
-}
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
 
 .footer img {
 	width: 40px;
@@ -259,10 +110,7 @@ a:hover > h1 {
 .footer {
 	grid-column: 1 / span 4;
 	justify-content: center;
-	margin: 50px auto 50px auto;
+	margin: auto;
 	height: 40px;
-}
-
-.footerhome {
-	margin: 500px auto 50px auto;
+	margin-top: 20vh;
 }

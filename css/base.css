@@ -18,7 +18,6 @@ body {
 	--color-info: #333;
 	--color-menu: #031de6;
 	--color-menu-hover: #000;
-	--grid-columns: 2;
 	--details-bg-up: #fff;
 	--details-bg-down: #f5f0ef;
 	--color-product-title: #000;
@@ -41,13 +40,8 @@ body {
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	margin: -8px;
 }
 
-.logo {
-	width: 250px;
-	margin-top: 50px;
-}
 h3 {
 	font-size: 15pt;
 	letter-spacing: 3px;
