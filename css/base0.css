@@ -4,7 +4,6 @@
 		margin: auto;}
 }
 
-
 h1 {
 	font-size: 22pt;
 	font-family: 'audimat_3000_mi-grasregular';
@@ -13,20 +12,18 @@ h1 {
 h2 {
 	font-size: 13pt;
 	letter-spacing: 1px;
-	color: #9a9a9a;
+	color: #FFF;
 	font-family: 'Source Sans Pro';
 	font-weight: 400;
-	line-height: 21pt;
-	mix-blend-mode: multiply;
+	line-height: 19pt;
 }
 h3 {
-	font-size: 18pt;
-	color: #505050;
-	letter-spacing: 13px;
-	margin: 10px 0px 0px 9px;
+	font-size: 11pt;
+	color: #FFF;
+	letter-spacing: 2px;
 	font-family: "Source Sans Pro";
-	font-weight: 500;
-	line-height: 1.6;
+	font-weight: 300;
+	line-height: 16pt;
 }
 h4 {
 	font-size: 13pt;
@@ -50,6 +47,9 @@ a {
 	text-decoration: none;
 	color: black;
 }
+.descr {
+
+}
 
 header {
 	display: flex;
@@ -58,7 +58,6 @@ header {
 	align-items: center;
 	grid-area: header;
 }
-
 header img {
 	width: 20vw;
 	margin-bottom: 20vh;
@@ -68,7 +67,6 @@ header img {
 	display: inline-grid;
 	grid-area: content;
 }
-
 .grid-global {
 	display: grid;
 	grid-template-rows: auto;
@@ -76,27 +74,36 @@ header img {
 	grid-template-areas:	". header header ."
 												"content content content content";
 }
-
 * { box-sizing: border-box; }
-
 .grid {
   max-width: 1300px;
 }
-
 .grid-item {
 	display: block;
   width: 325px;
   height: auto;
 	padding: 10px;
 }
-
+.grid .grid-item:hover img{
+	filter: brightness(30%);
+}
 .grid img {
-	width: 325px;
+	width: 100%;
+	z-index: 2;
+}
+.grid-item .descr {
+	opacity: 0%;
+	position: absolute;
+	z-index: 3;
+	top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.grid-item--height2 { height: 200px; }
-.grid-item--height3 { height: 260px; }
-.grid-item--height4 { height: 360px; }
+.grid .grid-item:hover .descr {
+	opacity: 100%;
+	position: absolute;
+}
+
 
 .footer img {
 	width: 40px;

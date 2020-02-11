@@ -42,13 +42,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-h3 {
-	font-size: 15pt;
-	letter-spacing: 3px;
-	margin-top: 13px;
-	font-family: "Source Sans Pro";
-	font-weight: 300;
-}
+
 
 a {
 	text-decoration: none;
