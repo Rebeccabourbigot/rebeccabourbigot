@@ -1,21 +1,45 @@
 @media all and (min-width: 1344px) {
 	.grid-global {
 		width: 75%;
-		margin: auto;}
+		margin: auto;
+	}
 	.grid-item {
 		padding: 10px;
+	}
+	.descr {
+		width: 60%;
 	}
 	.grid-sizer,
 	.grid-item {
 	  width: 25%;
 	}
+	h2 {
+		font-size: 15pt;
+		letter-spacing: 1pt;
+		line-height: 20pt;}
+	h3 {
+		font-size: 12pt;
+		letter-spacing: 1.7pt;
+		line-height: 17pt;}
 	header img {
 		width: 25vw;
 		margin: 10% auto;
-	}}
+	}
+	.footer img {
+		width: 40px;
+		margin: 10px 0 10px 0;}
+	.footer {
+		right: 2vw;
+		top: 15vh;
+		width: 40px;
+	}
+	.footer img:hover {
+		opacity: 1;
+	}
+}
 @media screen and (min-width: 700px) and (max-width: 1344px) {
 	.grid-global {
-		max-width: 90%;
+		max-width: 80%;
 		margin: auto;
 	}
 	.grid-item {
@@ -30,6 +54,9 @@
 		width: 30vw;
 		margin: 10% auto;
 	}
+	.descr {
+		width: 70%;
+	}
 	h2 {
 		font-size: 13pt;
 		letter-spacing: 0.7pt;
@@ -38,6 +65,17 @@
 		font-size: 11pt;
 		letter-spacing: 1.5pt;
 		line-height: 14pt;}
+	.footer img {
+		width: 30px;
+		margin: 10px 0 10px 0;}
+	.footer {
+		right: 2vw;
+		top: 15vh;
+		width: 40px;
+	}
+	.footer img:hover {
+		opacity: 1;
+	}
 }
 @media screen and (min-width: 550px) and (max-width: 900px) {
 	h2 {
@@ -50,6 +88,7 @@
 		line-height: 12pt;}
 }
 @media screen and (min-width: 300px) and (max-width: 550px) {
+	.descr {width: 80%;}
 	h2 {
 		font-size: 8pt;
 		letter-spacing: 0.1pt;
@@ -59,9 +98,9 @@
 		letter-spacing: 0.3pt;
 		line-height: 10pt;}
 }
-@media screen and (min-width: 400px) and (max-width: 700px) {
+@media screen and (min-width: 450px) and (max-width: 700px) {
 	.grid-global {
-		max-width: 90%;
+		max-width: 80%;
 		margin: auto;}
 	header img {
 		width: 40vw;
@@ -73,19 +112,42 @@
 	.grid-sizer,
 	.grid-item {
 		width: 33.3%;
-	}}
-	@media screen and (max-width: 400px) {
-		.grid-global {
-			max-width: 90%;
-			margin: auto;}
-		header img {
-			width: 50vw;
-			margin: 20% auto;
-		}
-		.grid-item {
-			padding: 3px;
-		}}
-@media screen and (min-width: 300px) and (max-width: 400px) {
+	}
+	.footer img {
+		width: 30px;
+		margin: 10px 0 10px 0;}
+	.footer {
+		right: 2vw;
+		top: 15vh;
+		width: 40px;
+	}
+	.footer img:hover {
+		opacity: 1;
+	}
+}
+@media screen and (max-width: 450px) {
+	.grid-global {
+		max-width: 90%;
+		margin: auto;}
+	header img {
+		width: 50vw;
+		margin: 20% auto;
+	}
+	.grid-item {
+		padding: 3px;
+	}
+	.footer img {
+		width: 8vw;
+		margin: 1vw 2vw;}
+	.footer {
+		top: 93%; left: 50%;
+	  transform: translate(-50%, -50%);
+		width: max-content;
+		background: #FFF;
+		padding: 2vw;
+	}
+}
+@media screen and (min-width: 300px) and (max-width: 450px) {
 	.grid-sizer,
 	.grid-item {
 		width: 50%;
@@ -97,9 +159,15 @@
 	}}
 
 h1 {
-	font-size: 22pt;
-	font-family: 'audimat_3000_mi-grasregular';
+	font-size: 13pt;
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
 	color: #383838;
+	margin: auto;
+	text-align: center;
+	display: inline-block;
+	padding: 5px 0px;
+	border-bottom: 0.5px solid #383838;
 }
 h2 {
 	color: #FFF;
@@ -141,6 +209,14 @@ header {
 	grid-area: header;
 }
 
+
+.selection {
+	grid-area: select;
+	display: none;
+ 	grid-template-columns: repeat(4,25%);
+	margin: 5% 0% 10% 0%;
+	justify-items: center;
+}
 .grid-content {
 	display: inline-grid;
 	grid-area: content;
@@ -149,12 +225,11 @@ header {
 	display: grid;
 	grid-template-rows: auto;
 	margin: auto;
+	margin-bottom: 20vh;
 	grid-template-areas:	". header header ."
 												"content content content content";
 }
-
 * { box-sizing: border-box; }
-
 .grid-item {
   float: left;
 }
@@ -166,7 +241,6 @@ header {
 	display: none;
 	position: absolute;
 	top: 50%; left: 50%;
-	width: 80%;
   transform: translate(-50%, -50%);
 	text-align: center;
 }
@@ -178,51 +252,14 @@ header {
 .grid-item:hover .descr {
 	display: block;}
 
-/*
-.grid {
-  max-width: 1300px;
-}
-.grid img {
-	width: 100%;
-	z-index: 2;
-}
-.grid-item {
-	display: block;
-  width: 325px;
-  height: auto;
-	padding: 10px;
-	float: left;
-}
-.grid-item .descr {
-	display: none;
-	opacity: 0%;
-	position: absolute;
-	z-index: 3;
-	top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-	transition: opacity .5s ease;
-}
-
-.grid .grid-item:hover .descr {
-	display: block;
-	opacity: 100%;
-	position: absolute;
-}*/
-
 
 .footer img {
-	width: 40px;
-	margin: 0 10px 0 10px;
 	opacity: 0.3;
 	transition: opacity 0.3s ease;
 	}
-.footer img:hover {
-	opacity: 1;
-}
+
 .footer {
-	grid-column: 1 / span 4;
-	justify-content: center;
+	position: fixed;
+	display: inline-block;
 	margin: auto;
-	height: 40px;
-	margin-top: 20vh;
 }

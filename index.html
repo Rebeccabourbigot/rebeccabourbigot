@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style>
-	@font-face {font-family: 'audimat_3000_grasregular'; src: url('font/audimat_3000_gras-webfont.woff') format('woff2'), url('audimat_3000_gras-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
-	@font-face {font-family: 'audimat_3000_mi-grasregular'; src: url('font/audimat_3000_regulier-webfont.woff') format('woff2'), url('audimat_3000_regulier-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
-	</style>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Eczar:400,500,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/base0.css" />
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="masonry-docs/masonry.pkgd.js"></script>
@@ -23,6 +20,12 @@
 		<header>
 			<img class="logo" src="img/logobec.png" alt="img-logo"/>
 		</header>
+		<div class="selection" data-toggle="buttons">
+			<label class="option1 active"><input type="radio" name="options" id="option01" autocomplete="off" checked><h1>TOUT</h1></label>
+			<label class="option2"><input type="radio" name="options" id="option02" autocomplete="off"><h1>FRESQUES</h1></label>
+			<label class="option3"><input type="radio" name="options" id="option03" autocomplete="off"><h1>GRAPHISME</h1></label>
+			<label class="option4"><input type="radio" name="options" id="option04" autocomplete="off"><h1>VIDEOS</h1></label>
+		</div>
 
 		<div class="grid-content">
 			<div class="grid">
@@ -56,6 +59,7 @@
 			</div>
 
 		</div>
+		</div>
 
 		<div class="footer">
 			<a href="https://www.instagram.com/rebeccabourbigot/" target="_blank"><img src="img/footer/instagram.png" alt=""></a>
@@ -67,7 +71,6 @@
 
 	</body>
 	<script src="masonry-docs/masonry.pkgd.js">	</script>
-
 	<script>
 	var grid = document.querySelector('.grid');
 
@@ -77,10 +80,12 @@
 	  percentPosition: true
 	});
 
-	imagesLoaded( grid ).on( 'progress', function() {
+	//imagesLoaded( grid ).on( 'progress', function() {
 	  // layout Masonry after each image loads
-	  msnry.layout();
-	});
+	  //msnry.layout();}); $('[src^="fr"]').css('display','none')
+
+	//$(".option02").click(function() {
+		//	$.alert("Message here","Title here");});
 	</script>
 	<script src="js/anime.min.js"></script>
 	<script src="js/main0.js"></script>
