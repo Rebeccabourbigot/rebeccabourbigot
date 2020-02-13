@@ -138,7 +138,7 @@
 	}
 	.footer img {
 		width: 8vw;
-		margin: 1vw 2vw;}
+		margin: auto 2vw;}
 	.footer {
 		top: 93%; left: 50%;
 	  transform: translate(-50%, -50%);
