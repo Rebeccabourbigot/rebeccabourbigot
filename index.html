@@ -79,12 +79,14 @@
 
 
 
-	var msnry = new Masonry( grid, {
-	  itemSelector: '.grid-item',
-	  columnWidth: '.grid-sizer',
- 		percentPosition: true
-	});
-//	void window.location.reload()
+	function fonctionTest() {
+		var msnry = new Masonry( grid, {
+			itemSelector: '.grid-item',
+			columnWidth: '.grid-sizer',
+			percentPosition: true
+		});
+	}
+	setTimeout(fonctionTest, 500);
 
 	  $('.grid-item img').load(function(){
 	    var msnry = new Masonry( grid, {
