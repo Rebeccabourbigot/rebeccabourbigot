@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/base0.css" />
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="masonry-docs/masonry.pkgd.js"></script>
+	<META HTTP-EQUIV="Refresh" CONTENT="TRUE">
 	<title>Rébecca Design</title>
 </head>
 
@@ -78,11 +79,11 @@
 	var msnry = new Masonry( grid, {
 	  itemSelector: '.grid-item',
 	  columnWidth: '.grid-sizer',
-  	percentPosition: true
+ 		percentPosition: true
 	});
+//	void window.location.reload()
 
-
-	  $(window).load(function(){
+	  $('.grid-item img').load(function(){
 	    var msnry = new Masonry( grid, {
 	    itemSelector: '.grid-item',
 	    "columnWidth": '.grid-sizer',
@@ -90,12 +91,12 @@
 	  })
 
 
-	//imagesLoaded( grid ).on( 'progress', function() {
-	  // layout Masonry after each image loads
-	  //msnry.layout();}); $('[src^="fr"]').css('display','none')
+	/*imagesLoaded( grid ).on( 'progress', function() {
+	   layout Masonry after each image loads
+	  msnry.layout();}); $('[src^="fr"]').css('display','none')
 
-	//$(".option02").click(function() {
-		//	$.alert("Message here","Title here");});
+		$(".option02").click(function() {
+		$.alert("Message here","Title here");});*/
 	</script>
 	<script src="js/anime.min.js"></script>
 	<script src="js/main0.js"></script>
