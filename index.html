@@ -72,6 +72,7 @@
 	</body>
 	<script src="masonry-docs/masonry.pkgd.js">	</script>
 	<script>
+
 	var grid = document.querySelector('.grid');
 
 	var msnry = new Masonry( grid, {
@@ -79,18 +80,15 @@
 	  columnWidth: '.grid-sizer',
 	  percentPosition: true
 	});
-	var container = document.querySelector('#container_item');
-	var msnry = new Masonry( container, {
-  // options
-  columnWidth: 200,
-  itemSelector: '.item'
-});
-  $('.item img').load(function(){
-          var msnry = new Masonry( container, {
-          itemSelector: '.item',
-          "columnWidth": 200,
-      });
-  })
+
+
+	  $('.grid-item img').load(function(){
+	    var msnry = new Masonry( container, {
+	    itemSelector: '.grid-item',
+	    "columnWidth": '.grid-sizer',
+		  });
+	  })
+
 
 	//imagesLoaded( grid ).on( 'progress', function() {
 	  // layout Masonry after each image loads
