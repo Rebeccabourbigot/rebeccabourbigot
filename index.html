@@ -10,7 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="css/base0.css" />
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="masonry-docs/masonry.pkgd.js"></script>
-	<META HTTP-EQUIV="Refresh" CONTENT="TRUE">
 	<title>Rébecca Design</title>
 </head>
 
@@ -75,6 +74,20 @@
 	<script>
 
 	var grid = document.querySelector('.grid');
+
+	(function()
+{
+  if( window.localStorage )
+  {
+    if( !localStorage.getItem('firstLoad') )
+    {
+      localStorage['firstLoad'] = true;
+      window.location.reload();
+    }
+    else
+      localStorage.removeItem('firstLoad');
+  }
+})();
 
 	var msnry = new Masonry( grid, {
 	  itemSelector: '.grid-item',
