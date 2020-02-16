@@ -10,7 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="css/base0.css" />
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="masonry-docs/masonry.pkgd.js"></script>
-	<META HTTP-EQUIV="Refresh" CONTENT="X;">
 	<title>Rébecca Design</title>
 </head>
 
@@ -79,11 +78,11 @@
 	var msnry = new Masonry( grid, {
 	  itemSelector: '.grid-item',
 	  columnWidth: '.grid-sizer',
-//	  percentPosition: true
+  	percentPosition: true
 	});
-//void window.location.reload()
 
-	  $('.grid-item img').load(function(){
+
+	  $(window).load(function(){
 	    var msnry = new Masonry( grid, {
 	    itemSelector: '.grid-item',
 	    "columnWidth": '.grid-sizer',
