@@ -137,8 +137,8 @@
 		padding: 3px;
 	}
 	.footer img {
-		width: 8vw;
-		margin: auto 2vw;}
+		width: 30px;
+		margin:0px 5px;}
 	.footer {
 		top: 93%; left: 50%;
 	  transform: translate(-50%, -50%);
@@ -253,7 +253,7 @@ header {
 	display: block;}
 
 
-	.grid {
+.grid {
 	    opacity:0;
 	    -moz-animation: anim 1.5s linear forwards 1s;
 	    -webkit-animation: anim 1.5s linear forwards 1s;

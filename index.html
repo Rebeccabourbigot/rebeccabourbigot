@@ -78,7 +78,6 @@
 	var grid = document.querySelector('.grid');
 
 
-
 	function fonctionTest() {
 		var msnry = new Masonry( grid, {
 			itemSelector: '.grid-item',
@@ -86,15 +85,7 @@
 			percentPosition: true
 		});
 	}
-	setTimeout(fonctionTest, 1000);
-
-	  $('.grid-item img').load(function(){
-	    var msnry = new Masonry( grid, {
-	    itemSelector: '.grid-item',
-	    "columnWidth": '.grid-sizer',
-		  });
-	  })
-
+	setTimeout(fonctionTest, 2000);
 
 
 
