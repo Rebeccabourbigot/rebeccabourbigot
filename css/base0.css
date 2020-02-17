@@ -23,7 +23,7 @@
 		line-height: 17pt;}
 	header img {
 		width: 25vw;
-		margin: 10% auto;
+		margin: 130px auto;
 	}
 	.footer img {
 		width: 40px;
@@ -52,7 +52,7 @@
 	}
 	header img {
 		width: 30vw;
-		margin: 10% auto;
+		margin: 70px auto;
 	}
 	.descr {
 		width: 70%;
@@ -104,7 +104,7 @@
 		margin: auto;}
 	header img {
 		width: 40vw;
-		margin: 10% auto;
+		margin: 70px auto;
 	}
 	.grid-item {
 		padding: 5px;
@@ -115,7 +115,7 @@
 	}
 	.footer img {
 		width: 30px;
-		margin: 10px 0 10px 0;}
+		margin: 10px 0px 10px 0px;}
 	.footer {
 		right: 2vw;
 		top: 15vh;
@@ -131,7 +131,7 @@
 		margin: auto;}
 	header img {
 		width: 50vw;
-		margin: 20% auto;
+		margin: 70px auto;
 	}
 	.grid-item {
 		padding: 3px;
