@@ -20,14 +20,8 @@
 
 	<div class="grid-global">
 		<header>
-			<img class="logo" src="img/video.gif" alt="img-logo"/>
+
 		</header>
-		<div class="selection" data-toggle="buttons">
-			<label class="option1 active"><input type="radio" name="options" id="option01" autocomplete="off" checked><h1>TOUT</h1></label>
-			<label class="option2"><input type="radio" name="options" id="option02" autocomplete="off"><h1>FRESQUES</h1></label>
-			<label class="option3"><input type="radio" name="options" id="option03" autocomplete="off"><h1>GRAPHISME</h1></label>
-			<label class="option4"><input type="radio" name="options" id="option04" autocomplete="off"><h1>VIDEOS</h1></label>
-		</div>
 
 		<div class="grid-content">
 			<div class="grid">
@@ -87,7 +81,13 @@
 	}
 	setTimeout(fonctionTest, 1000);
 
-
+	$(document).ready(function(){
+	    $("a.load").click(function(){
+	        $('.grid-item').load(this.href);
+	        return false;
+	        $('.grid-item').masonry('reload');
+	    });
+	});
 
 
 	/*imagesLoaded( grid ).on( 'progress', function() {
