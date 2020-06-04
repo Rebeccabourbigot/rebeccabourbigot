@@ -21,9 +21,9 @@
 		font-size: 12pt;
 		letter-spacing: 1.7pt;
 		line-height: 17pt;}
-	.logo {
-		width: 40vw;
-		margin: 0px auto -180px auto;
+	.logo img{
+		width: 25vw;
+		margin: 100px;
 	}
 	.footer img {
 		width: 40px;
@@ -50,9 +50,9 @@
 	.grid-item {
 		width: 25%;
 	}
-	.logo {
-		width: 30vw;
-		margin: 0 auto -100px auto;
+	.logo img {
+		width: 25vw;
+		margin: 70px;
 	}
 	.descr {
 		width: 70%;
@@ -102,9 +102,9 @@
 	.grid-global {
 		max-width: 80%;
 		margin: auto;}
-	.logo {
-		width: 55vw;
-		margin: 0 auto -80px auto;
+	.logo img {
+		width: 25vw;
+		margin: 50px;
 	}
 	.grid-item {
 		padding: 5px;
@@ -129,9 +129,9 @@
 	.grid-global {
 		max-width: 90%;
 		margin: auto;}
-	.logo {
-		width: 80vw;
-		margin: 0 auto -70px auto;
+	.logo img {
+		width: 45vw;
+		margin: 40px;
 	}
 	.grid-item {
 		padding: 3px;
@@ -140,7 +140,7 @@
 		width: 30px;
 		margin:0px 5px;}
 	.footer {
-		top: 93%; left: 50%;
+		top: 97%; left: 50%;
 	  transform: translate(-50%, -50%);
 		width: max-content;
 		background: #FFF;
@@ -255,11 +255,11 @@ header {
 
 .grid {
 	    opacity:0;
-	    -moz-animation: anim 1.5s linear forwards 2s;
-	    -webkit-animation: anim 1.5s linear forwards 2s;
-	    -o-animation: anim 1.5s linear forwards 2s;
-	    -ms-animation: anim 1.5s linear forwards 2s;
-	    animation: anim 1.5s linear forwards 2s;
+	    -moz-animation: anim 1.5s linear forwards 1s;
+	    -webkit-animation: anim 1.5s linear forwards 1s;
+	    -o-animation: anim 1.5s linear forwards 1s;
+	    -ms-animation: anim 1.5s linear forwards 1s;
+	    animation: anim 1.5s linear forwards 1 s;
 	}
 	@-moz-keyframes anim {
 	   0%  {opacity:0;}
